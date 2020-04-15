@@ -18,6 +18,7 @@ class User extends Migration
             $table->string('Nama_lengkap');
             $table->string('username');
             $table->string('password');
+            $table->string('confirm password');
             $table->string('emailuser');
             $table->string('kategori');
             $table->timestamps();
