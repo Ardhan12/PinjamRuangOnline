@@ -21,6 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('log', function () {
-    return view('log');
-});
+Route::get('/dashboard','BookingController@dashboard');
+Route::get('/bookingruangan','BookingController@booking');

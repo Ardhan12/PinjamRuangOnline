@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html>
  <head>
@@ -102,36 +105,28 @@
 		</div>
 		<form method="post" class="form" action="{{ route('login') }}">
 		@csrf
-			<label for="emailuser" style="padding-top:13px" ></label>
-				<input
-				id="emailuser"
-				type="email"
-				class="form-content"
-				placeholder="Masukkan Email"
-				name="emailuser"
-				value="{{ old('emailuser') }}"
-				autocomplete="on"
-				required />
-				@error('emailuser')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-				<div class="form-border"></div>
-			<label for="password" style="padding-top:22px"></label>
-				<input
-				id="password"
-				type="password"
-				class="form-content"
-				placeholder="Masukkan Password"
-				type="password"
-				name="password"
-				required />
-				@error('password')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
+			<label for="email" class="padding-top:13px">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+				<label for="password" class="padding-top:22px">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
 				<div class="form-border"></div>
 			<a href="#"><legend id="forgot-pass">Forgot password?</legend></a>
 			<input id="submit-btn" type="submit" name="submit" value="LOGIN" />
@@ -139,4 +134,4 @@
 		</form>
 	</div>
  </body>
-</html>
+</html
