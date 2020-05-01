@@ -8,13 +8,18 @@ Pengguna aplikasi diharapkan membaca dan mengerti Standard Operating Procedure (
 
 ## Fitur
 
-fitur yang sudah bisa dipakai
+fitur yang sudah bisa dipakai:
+
 login
+
 register
+
 home
+
 redirect navbar
 
 ## Prerequisite
 
 Yang harus di install sebelumnya sipaya bisa run project ini:
+
 Laravel Framework 7.2.2
