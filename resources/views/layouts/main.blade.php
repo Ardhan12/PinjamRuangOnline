@@ -127,7 +127,7 @@
           <i class="fa fa-edit"></i> <span>Booking Ruangan</span></a>
         </li>
         <li>
-          <a href="../mailbox/mailbox.html">
+          <a href="status">
             <i class="fa fa-laptop"></i> <span>Status</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>

@@ -22,4 +22,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/dashboard','BookingController@dashboard');
-Route::get('/bookingruangan','BookingController@booking');
+Route::get('/booking','BookingController@booking');
+//Route::get('booking', 'BookingController@index');
+//Route::post('booking', 'BookingController@create');
+
+Route::get('/prosedur','ProsedurController@prosedur');
+Route::get('/status','StatusController@status');
+Route::get('/pjinput','PJInputController@pjinput');
+Route::get('/pjdashboard','PJDashboardController@pjdashboard');
+Route::get('/pjinformasi','PJInformasiController@pjinformasi');

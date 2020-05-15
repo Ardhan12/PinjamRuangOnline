@@ -25,11 +25,11 @@
             <form role="form">
               <div class="box-body">
                 <div class="form-group">
-                  <label for="exampleInputNamaOrganisasi1">Nama Organisasi</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Nama Organisasi">
+                  <label for="name_organisasi">Nama Organisasi</label>
+                  <input type="text" class="form-control" id="name_organisasi" placeholder="Enter Nama Organisasi">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputGedung1">Gedung</label>
+                  <label for="nama_gedung">Gedung</label>
                   <select class="form-control">
                     <option selected="selected">Silakan Pilih Gedung</option>
                     <option value="option1">option 1</option>
@@ -40,7 +40,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputRuangan1">Ruangan</label>
+                  <label for="nama_ruang">Ruangan</label>
                   <select class="form-control">
                     <option selected="selected">Silakan Pilih Ruangan</option>
                     <option value="option1">option 1</option>
@@ -51,22 +51,22 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputNPM1">NPM</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter NPM">
+                  <label for="npm">NPM</label>
+                  <input type="text" class="form-control" id="npm" placeholder="Enter NPM">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputNamaPeminjam1">Nama Peminjam</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Nama Peminjam">
+                  <label for="nama">Nama Peminjam</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Enter Nama Peminjam">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFile">Upload Foto KTM</label>
-                  <input type="file" id="exampleFotoKTM">
+                  <label for="foto_ktm">Upload Foto KTM</label>
+                  <input type="file" id="foto_ktm">
 
                   <p class="help-block">*KTM harus sesuai dengan peminjam.</p>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFile">Upload Surat Izin</label>
-                  <input type="file" id="exampleSuratIzin">
+                  <label for="surat">Upload Surat Izin</label>
+                  <input type="file" id="surat">
 
                   <p class="help-block">*Surat izin harus sudah disetujui oleh Dekanat.</p>
                 </div>
@@ -80,8 +80,8 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputNomor Handphone1">Nomor Handphone</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Nomor Handphone">
+                  <label for="cp_user">Nomor Handphone</label>
+                  <input type="text" class="form-control" id="cp_user" placeholder="Enter Nomor Handphone">
                 </div>
                 <div class="checkbox">
                   <label>
