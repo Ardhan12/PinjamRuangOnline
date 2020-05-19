@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.mainpj')
 
 @section('title','Input Ruangan')
 
@@ -22,7 +22,8 @@
         <div class="row">
           <div class="col-md-6">
             <!-- form start -->
-            <form role="form">
+            <form role="form" method="post" action="create">
+            @csrf
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputNamaGedung">Nama Gedung</label>
@@ -33,16 +34,16 @@
                   <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Kode Gedung">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputNamaRuangan">Nama Ruangan</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Nama Ruangan">
+                  <label for="nama_ruangan">Nama Ruangan</label>
+                  <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Enter Nama Ruangan">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputKodeRuangan">Kode Ruangan</label>
                   <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Kode Ruangan">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputKapasitasRuangan">Kapasitas Ruangan</label>
-                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Kapasitas Ruangan">
+                  <label for="kapasitas">Kapasitas Ruangan</label>
+                  <input type="number" class="form-control" id="kapasitas" name="kapasitas" placeholder="Enter Kapasitas Ruangan">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputContactPerson">Contact Person</label>
@@ -57,7 +58,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" name="submit">Submit</button>
               </div>
             </form>
           </div>

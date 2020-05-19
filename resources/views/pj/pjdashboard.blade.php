@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.mainpj')
 
 @section('title','PJ Dashboard')
 

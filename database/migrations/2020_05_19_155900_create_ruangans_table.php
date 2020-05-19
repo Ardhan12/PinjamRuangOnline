@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Ruangan extends Migration
+class CreateRuangansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class Ruangan extends Migration
      */
     public function up()
     {
-        Schema::create('ruangan', function (Blueprint $table) {
+        Schema::create('ruangans', function (Blueprint $table) {
             $table->increments('ruang_id');
            /* $table->unsignedInteger('gedung_id')->nullable();
             $table->string('gedung_id')->unsigned();

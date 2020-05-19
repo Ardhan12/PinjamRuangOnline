@@ -28,6 +28,9 @@ Route::get('/booking','BookingController@booking');
 
 Route::get('/prosedur','ProsedurController@prosedur');
 Route::get('/status','StatusController@status');
-Route::get('/pjinput','PJInputController@pjinput');
-Route::get('/pjdashboard','PJDashboardController@pjdashboard');
-Route::get('/pjinformasi','PJInformasiController@pjinformasi');
+
+//PJRoute::resource('contacts', 'ContactController');
+Route::get('/pj/create','pj\pjinputController@create');
+Route::post('/pj/create','pj\pjinputController@store');
+Route::get('/pjdashboard','pj\PJDashboardController@show');
+Route::get('/pjinformasi','PJ\PJInformasiController@show');
