@@ -26,33 +26,20 @@
             @csrf
               <div class="box-body">
                 <div class="form-group">
-                  <label for="exampleInputNamaGedung">Nama Gedung</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Nama Gedung">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputKodeGedung">Kode Gedung</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Kode Gedung">
+                  <label for="namagedung">Nama Gedung</label>
+                    <select class="form-control select2" style="width: 100%;" id="namagedung" name="namagedung" required>
+                      @foreach ($gedung as $gedung)
+                      <option value="{{$gedung->nama_gedung}}">{{$gedung->nama_gedung}}</option>
+                      @endforeach
+                    </select>
                 </div>
                 <div class="form-group">
                   <label for="nama_ruangan">Nama Ruangan</label>
                   <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Enter Nama Ruangan">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputKodeRuangan">Kode Ruangan</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Kode Ruangan">
-                </div>
-                <div class="form-group">
                   <label for="kapasitas">Kapasitas Ruangan</label>
                   <input type="number" class="form-control" id="kapasitas" name="kapasitas" placeholder="Enter Kapasitas Ruangan">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputContactPerson">Contact Person</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Contact Person">
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Semua data ruangan benar dan sesuai.
-                  </label>
                 </div>
               </div>
               <!-- /.box-body -->

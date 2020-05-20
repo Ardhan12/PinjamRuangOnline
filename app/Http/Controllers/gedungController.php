@@ -1,15 +1,10 @@
 <?php
 
-
-namespace App\Http\Controllers\pj;
-use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Controller;
-use App\gedung;
-use App\ruangan;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class pjinputController extends Controller
+use App\gedung;
+class gedungController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,11 +13,16 @@ class pjinputController extends Controller
      */
     public function index()
     {
-        $gedung = gedung::all();
-        return view('pj.create')->with('gedung',$gedung);
+        //return gedung::all();
+        $gedung = DB::table('gedung')
+                ->select('gedung.nama_gedung')
+                ->paginate(10);
+
+        return view('pj.create',['gedung'=> $gedung]);
+        //$gedung = gedung::all();
+        //return view('pj.create', compact('gedung'));
     }
 
-    
     /**
      * Show the form for creating a new resource.
      *
@@ -30,7 +30,7 @@ class pjinputController extends Controller
      */
     public function create()
     {
-        return view('pj.create');
+        //
     }
 
     /**
@@ -41,13 +41,7 @@ class pjinputController extends Controller
      */
     public function store(Request $request)
     {
-        $ruangan = new ruangan;
-
-        $ruangan->nama_ruangan = $request->nama_ruangan;
-        $ruangan->namagedung = $request->namagedung;
-        $ruangan->kapasitas = $request->kapasitas;
-        $ruangan->save();
-        return redirect('/pj/create');
+        //
     }
 
     /**
@@ -56,11 +50,9 @@ class pjinputController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        //$gedung = gedung::find($nama_gedung);
-
-        //return view('pj.create',['gedung'=>$gedung]);
+        //
     }
 
     /**

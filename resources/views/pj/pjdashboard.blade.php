@@ -21,16 +21,12 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label>Gedung</label>
-              <select class="form-control select2" style="width: 100%;">
-                <option selected="selected">Silakan Pilih Gedung</option>
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-                <option>E</option>
-                <option>F</option>
-              </select>
+              <label for="nama_gedung">Gedung</label>
+              <select class="form-control select2" style="width: 100%;"name="nama_gedung" id="nama_gedung" required>
+              @foreach ($gedung as $gedung)
+                <option selected="selected" value="{{$gedung->nama_gedung}}">{{$gedung->nama_gedung}}</option>
+                @endforeach
+              </select>   
             </div>
             <!-- /.form-group -->
             <div class="form-group">

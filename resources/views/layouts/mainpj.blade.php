@@ -123,7 +123,7 @@
         <li><a href="/pjinformasi">
           <i class="fa fa-laptop"></i> <span>Informasi Ruangan</span></a>
         </li>
-        <li><a href="/pjinput">
+        <li><a href="/pj/create">
           <i class="fa fa-edit"></i> <span>Input Ruangan</span></a>
         </li>
       </ul>
