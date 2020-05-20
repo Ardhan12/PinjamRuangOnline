@@ -26,21 +26,21 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="name_organisasi">Nama Organisasi</label>
-                  <input type="text" class="form-control" id="name_organisasi" placeholder="Enter Nama Organisasi">
+                  <p class="mt-2">{{ Auth::user()->name }}</p>
                 </div>
                 <div class="form-group">
                   <label for="nama_gedung">Gedung</label>
                   <select class="form-control">
-                    @foreach ($ruangan as $r)
-                      <option value="{{$r->namagedung}}">{{$r->namagedung}}</option>
+                    @foreach (App\gedung::all() as $gedung)
+                      <option value="{{$gedung->gedung_id}}" id="gedung{{$gedung->gedung_id}}">{{$gedung->nama_gedung}}</option>
                     @endforeach
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="nama_ruang">Ruangan</label>
                   <select class="form-control">
-                    @foreach ($ruangan as $r)
-                      <option value="{{$r->nama_ruang}}">{{$r->nama_ruang}}</option>
+                    @foreach (App\ruangan::all() as $r)
+                      <option value="{{$r->ruang_id}}" id="r{{$r->ruang_id}}">{{$r->nama_ruangan}}</option>
                     @endforeach
                   </select>
                 </div>
