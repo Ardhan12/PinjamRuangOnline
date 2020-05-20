@@ -123,7 +123,7 @@
         <li><a href="prosedur">
           <i class="fa fa-book"></i> <span>Prosedur Peminjaman</span></a>
         </li>
-        <li><a href="booking">
+        <li><a href="/user/booking">
           <i class="fa fa-edit"></i> <span>Booking Ruangan</span></a>
         </li>
         <li>

@@ -21,8 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/dashboard','BookingController@dashboard');
-Route::get('/booking','BookingController@booking');
+//Route::get('/dashboard','BookingController@dashboard');
 //Route::get('booking', 'BookingController@index');
 //Route::post('booking', 'BookingController@create');
 
@@ -32,9 +31,12 @@ Route::get('/status','StatusController@status');
 //Route::get('gedung','gedungController@index');
 //PJRoute::resource('contacts', 'ContactController');
 Route::get('/pj/create','pj\pjinputController@index');
-//Route::get('/pj/create/{gedung}','pj\pjinputController@show');
-//Route::get('/pj/create','pj\pjinputController@create');
 Route::post('/pj/create','pj\pjinputController@store');
 Route::get('/pjdashboard','pj\PJDashboardController@index');
 //Route::get('/pjdashboard','pj\PJDashboardController@show');
 Route::get('/pjinformasi','PJ\PJInformasiController@show');
+
+//booking
+Route::get('booking','user\bookingController@index');
+Route::get('booking','user\bookingController@create');
+Route::post('booking','user\bookingController@store');
