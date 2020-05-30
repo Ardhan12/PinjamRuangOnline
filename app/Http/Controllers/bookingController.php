@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\user;
+namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -18,8 +18,10 @@ class bookingController extends Controller
      */
     public function index()
     {
+        $gedung = gedung::all();
+        //return view('pj.create')->with('gedung',$gedung);
         $ruangan = ruangan::all();
-
+        //return view('booking', compact('karyawan','orders'));
         return view('booking')->with('ruangan',$ruangan);
      //   $ruangan = DB::table('ruangan')
        //         ->join('gedung','ruangan.namagedung','=','gedung.nama_gedung')
@@ -35,8 +37,9 @@ class bookingController extends Controller
      */
     public function create()
     {
-        $book = DB::table('bookingruangan')->get();
-        return view('booking', ['book' => $book]);
+        //$book = DB::table('bookingruangan')->get();
+        //return view('booking', ['book' => $book]);
+        return view('booking');
     }
 
     /**
@@ -50,6 +53,8 @@ class bookingController extends Controller
         $book = new booking;
 
         $book->npm = $request->npm;
+        $book->nama_ruang = $request->nama_ruang;
+        $book->nama_gedung = $request->nama_gedung;
         $book->nama_peminjam = $request->nama_peminjam;
         $book->foto_ktm = $request->foto_ktm;
         $book->surat = $request->surat;
@@ -57,7 +62,7 @@ class bookingController extends Controller
         $book->tanggal_pinjam = $request->tanggal_pinjam;
         $book->save();
 
-        return redirect('booking');
+        return redirect('status');
     }
 
     /**

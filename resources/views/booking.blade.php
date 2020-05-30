@@ -22,25 +22,26 @@
         <div class="row">
           <div class="col-md-6">
             <!-- form start -->
-            <form role="form">
+            <form role="form" method="post" action="booking">
+            @csrf
               <div class="box-body">
                 <div class="form-group">
                   <label for="name_organisasi">Nama Organisasi</label>
                   <p class="mt-2">{{ Auth::user()->name }}</p>
                 </div>
                 <div class="form-group">
-                  <label for="nama_gedung">Gedung</label>
-                  <select class="form-control">
+                  <label for="namagedung">Gedung</label>
+                  <select class="form-control" id="nama_gedung" name="nama_gedung" required>
                     @foreach (App\gedung::all() as $gedung)
-                      <option value="{{$gedung->gedung_id}}" id="gedung{{$gedung->gedung_id}}">{{$gedung->nama_gedung}}</option>
+                      <option value="{{$gedung->nama_gedung}}">{{$gedung->nama_gedung}}</option>
                     @endforeach
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="nama_ruang">Ruangan</label>
-                  <select class="form-control">
+                  <select class="form-control" id="nama_ruang" name="nama_ruang" required>
                     @foreach (App\ruangan::all() as $r)
-                      <option value="{{$r->ruang_id}}" id="r{{$r->ruang_id}}">{{$r->nama_ruangan}}</option>
+                      <option value="{{$r->nama_ruangan}}">{{$r->nama_ruangan}}</option>
                     @endforeach
                   </select>
                 </div>
@@ -65,17 +66,28 @@
                   <p class="help-block">*Surat izin harus sudah disetujui oleh Dekanat.</p>
                 </div>
                 <div class="form-group">
+                <div class='input-group date' id='datetimepicker'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            
+                <!--<div class="form-group">
                   <label for="tanggal_pinjam">Date and time range:</label>
                   <div class="input-group">
                     <div class="input-group-addon">
-                      <i class="fa fa-clock-o"></i>
+                      <i class="fa fa-clock-o" id="tanggal_pinjam" name="tanggal_pinjam"></i>
                     </div>
                     <input type="text" class="form-control pull-right" id="reservationtime">
                   </div>
-                </div>
+                  
+                </div>-->
+                
                 <div class="form-group">
                   <label for="cp_user">Nomor Handphone</label>
-                  <input type="text" class="form-control" id="cp_user" placeholder="Enter Nomor Handphone">
+                  <input type="text" class="form-control" id="cp_user" name="cp_user" placeholder="Enter Nomor Handphone">
                 </div>
                 <div class="checkbox">
                   <label>
