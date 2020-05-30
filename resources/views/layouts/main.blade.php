@@ -138,77 +138,18 @@
 <!-- SlimScroll -->
 <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- bootstrap datepicker -->
-<!--<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>-->
+<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- date-range-picker -->
-<!--<script src="/bower_components/moment/min/moment.min.js"></script>
-<script src="/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>-->
+<script src="/bower_components/moment/min/moment.min.js"></script>
+<script src="/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- FastClick -->
 <script src="/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="/js/adminlte.min.js"></script>
-<!--  jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-
-<!-- Bootstrap Date-Picker Plugin -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 <!-- AdminLTE for demo purposes -->
 <script src="/js/demo.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
 <script>
- $(function () {
-   var bindDatePicker = function() {
-		$(".date").datetimepicker({
-        format:'YYYY-MM-DD',
-			icons: {
-				time: "fa fa-clock-o",
-				date: "fa fa-calendar",
-				up: "fa fa-arrow-up",
-				down: "fa fa-arrow-down"
-			}
-		}).find('input:first').on("blur",function () {
-			// check if the date is correct. We can accept dd-mm-yyyy and yyyy-mm-dd.
-			// update the format if it's yyyy-mm-dd
-			var date = parseDate($(this).val());
-
-			if (! isValidDate(date)) {
-				//create date based on momentjs (we have that)
-				date = moment().format('YYYY-MM-DD');
-			}
-
-			$(this).val(date);
-		});
-	}
-   
-   var isValidDate = function(value, format) {
-		format = format || false;
-		// lets parse the date to the best of our knowledge
-		if (format) {
-			value = parseDate(value);
-		}
-
-		var timestamp = Date.parse(value);
-
-		return isNaN(timestamp) == false;
-   }
-   
-   var parseDate = function(value) {
-		var m = value.match(/^(\d{1,2})(\/|-)?(\d{1,2})(\/|-)?(\d{4})$/);
-		if (m)
-			value = m[5] + '-' + ("00" + m[3]).slice(-2) + '-' + ("00" + m[1]).slice(-2);
-
-		return value;
-   }
-   
-   bindDatePicker();
- });
- /* $(document).ready(function () {
+  $(document).ready(function () {
     $('.sidebar-menu').tree()
   })
   //Date picker

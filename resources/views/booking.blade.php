@@ -66,25 +66,14 @@
                   <p class="help-block">*Surat izin harus sudah disetujui oleh Dekanat.</p>
                 </div>
                 <div class="form-group">
-                <div class='input-group date' id='datetimepicker'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-            
-                <!--<div class="form-group">
-                  <label for="tanggal_pinjam">Date and time range:</label>
-                  <div class="input-group">
+                  <label>Tanggal Pinjam</label>
+                  <div class="input-group date">
                     <div class="input-group-addon">
-                      <i class="fa fa-clock-o" id="tanggal_pinjam" name="tanggal_pinjam"></i>
+                      <i class="fa fa-calendar"></i>
                     </div>
-                    <input type="text" class="form-control pull-right" id="reservationtime">
+                  <input type="text" class="form-control pull-right" id="datepicker">
                   </div>
-                  
-                </div>-->
-                
+                </div>
                 <div class="form-group">
                   <label for="cp_user">Nomor Handphone</label>
                   <input type="text" class="form-control" id="cp_user" name="cp_user" placeholder="Enter Nomor Handphone">
