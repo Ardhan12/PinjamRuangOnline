@@ -1,137 +1,74 @@
-@extends('layouts.app')
 
 @section('content')
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/css/AdminLTE.min.css">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
  <head>
-  <title>Login</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <style>
-	body {
-       background: -webkit-linear-gradient(bottom, #AB3E16, #48120E);
-       background-repeat: no-repeat;
-	}
-	#card {
-        background: #F8F3E6;
-        border-radius: 8px;
-        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-        height: 500px;
-        margin: 3.8rem auto 3.6rem auto;
-        width: 1000px;
-	}
-	#card-content {
-		padding: 12px 44px;
-	}
-	#card-title {
-		font-family: "Raleway Thin", sans-serif;
-		letter-spacing: 4px;
-		padding-bottom: 23px;
-		padding-top: 13px;
-		text-align: center;
-	}
-	.underline-title {
-		background: -webkit-linear-gradient(right, #AB3E16, #48120E);
-		height: 2px;
-		margin: -1.1rem auto 0 auto;
-		width: 89px;
-	}
-	a {
-		text-decoration: none;
-	}
-	label {
-		font-family: "Raleway", sans-serif;
-		font-size: 11pt;
-	}
-	#forgot-pass {
-		color: #AB3E16;
-		font-family: "Raleway", sans-serif;
-		font-size: 10pt;
-		margin-top: 3px;
-		text-align: right;
-	}
-	.form {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-	}
-	.form-border {
-		background: -webkit-linear-gradient(right, #AB3E16, #48120E);
-		height: 1px;
-		width: 40%;
-	}
-	.form-content {
-		width: 40%;
-		height: 50px;
-		border: none;
-		border-bottom: 1px solid #AB3E16;
-		font-size: 16px;
-		font-family: "Raleway", sans-serif;
-		background: #fbfbfb;
-		outline: none;
-	}
-	#signup {
-		color: #AB3E16;
-		font-family: "Raleway", sans-serif;
-		font-size: 10pt;
-		margin-top: 16px;
-		text-align: center;
-	}
-	#submit-btn {
-		background: -webkit-linear-gradient(right, #AB3E16, #48120E);
-		border: none;
-		border-radius: 21px;
-		box-shadow: 0px 1px 8px #AB3E16;
-		cursor: pointer;
-		color: white;
-		font-family: "Raleway SemiBold", sans-serif;
-		height: 42.3px;
-		margin: 0 auto;
-		margin-top: 50px;
-		transition: 0.25s;
-		width: 153px;
-	}
-	#submit-btn:hover {
-		box-shadow: 0px 1px 18px #48120E;
-	}
-  </style>
- </head>
- <body>
-	<div id="card">
-		<div id="card-content">
-			<div id="card-title">
-				<h2>PEMINJAMAN RUANGAN/TEMPAT</h2>
-		<div class="underline-title"></div>
-			</div>
-		</div>
-		<form method="post" class="form" action="{{ route('login') }}">
-		@csrf
-			<label for="email" class="padding-top:13px">{{ __('E-Mail Address') }}</label>
+ <body class="hold-transition login-page">
+	<div class="login-box">
+  	<!-- /.login-logo -->
+  		<div class="login-box-body">
+    		<div class="login-logo">
+      			<a href="/index2.html"><b>Peminjaman Ruangan/Tempat</b></a>
+    		</div>
+    		<p class="login-box-msg">Login untuk booking ruangan</p>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+			<form method="post" class="form" action="{{ route('login') }}">
+			@csrf
+				<label for="email" class="padding-top:13px">{{ __('E-Mail Address') }}</label>
+            	<div class="form-group has-feedback">
+                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    @error('email')
+					<span class="glyphicon glyphicon-envelope form-control-feedback">
+                    <!-- <span class="invalid-feedback" role="alert"> -->
+                    	<strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                </div>
 				<label for="password" class="padding-top:22px">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                <div class="form-group has-feedback">
+                    <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password">
+					 @error('password')
+					<span class="glyphicon glyphicon-lock form-control-feedback">
+                    <!--<span class="invalid-feedback" role="alert">-->
+                    	<strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                </div>
+				<div class="row">
+        			<div class="col-xs-8">
+        		</div>
+        		<!-- /.col -->
+        		<div class="col-xs-4">
+        		<!--<button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>-->
+					<input id="submit-btn" class="btn btn-primary btn-block btn-flat" type="submit" name="submit" value="LOGIN" />
+				</div>		
+<!--
 				<div class="form-border"></div>
 			<a href="#"><legend id="forgot-pass">Forgot password?</legend></a>
 			<input id="submit-btn" type="submit" name="submit" value="LOGIN" />
-			<a href="#" id="signup">Don't have account yet?</a>
-		</form>
+			<a href="#" id="signup">Don't have account yet?</a> -->
+			</form>
+		</div>
 	</div>
+<!-- jQuery 3 -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
  </body>
 </html

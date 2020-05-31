@@ -77,51 +77,18 @@
                   <th>Nama Peminjam</th>
                   <th>Status</th>
                 </tr>
+                @foreach ($book as $book)
                 <tr>
-                  <td>00-00-00</td>
-                  <td>00-00-00</td>
-                  <td>00.00 - 00.00</td>
-                  <td>PPBS</td>
-                  <td>UAJT0000</td>
-                  <td>Justin</td>
-                  <td><span class="label label-success">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>00-00-00</td>
-                  <td>00-00-00</td>
-                  <td>00.00 - 00.00</td>
-                  <td>PPBS</td>
-                  <td>UAJT0000</td>
-                  <td>Justin</td>
+                  <td>{{$book->created_at}}</td>
+                  <td>{{$book->tanggal_pinjam}}</td>
+                  <td>08.00 - 20.00</td>
+                  <td>{{$book->nama_gedung}}</td>
+                  <td>{{$book->nama_ruang}}</td>
+                  <td>{{$book->nama_peminjam}}</td>
                   <td><span class="label label-warning">Pending</span></td>
                 </tr>
-                <tr>
-                  <td>00-00-00</td>
-                  <td>00-00-00</td>
-                  <td>00.00 - 00.00</td>
-                  <td>PPBS</td>
-                  <td>UAJT0000</td>
-                  <td>Justin</td>
-                  <td><span class="label label-danger">Denied</span></td>
-                </tr>
-                <tr>
-                  <td>00-00-00</td>
-                  <td>00-00-00</td>
-                  <td>00.00 - 00.00</td>
-                  <td>PPBS</td>
-                  <td>UAJT0000</td>
-                  <td>Justin</td>
-                  <td><span class="label label-success">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>00-00-00</td>
-                  <td>00-00-00</td>
-                  <td>00.00 - 00.00</td>
-                  <td>PPBS</td>
-                  <td>UAJT0000</td>
-                  <td>Justin</td>
-                  <td><span class="label label-success">Approved</span></td>
-                </tr>
+                @endforeach
+                
               </table>
             </div>
             <!-- /.box-body -->

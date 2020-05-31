@@ -26,7 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route::post('booking', 'BookingController@create');
 
 Route::get('/prosedur','ProsedurController@prosedur');
-Route::get('status','StatusController@status');
+Route::get('status','StatusController@index');
 //gedung
 //Route::get('gedung','gedungController@index');
 //PJRoute::resource('contacts', 'ContactController');
