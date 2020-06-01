@@ -9,7 +9,6 @@
   <section class="content-header">
     <h1>
       Informasi Ruangan
-      <small>it all starts here</small>
     </h1>
   </section>
   <!-- Main content -->
