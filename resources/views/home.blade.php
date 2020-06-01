@@ -71,7 +71,6 @@
                 <tr>
                   <th>Tanggal Booking</th>
                   <th>Tanggal Pinjam</th>
-                  <th>Waktu Pinjam</th>
                   <th>Gedung</th>
                   <th>Ruangan</th>
                   <th>Nama Peminjam</th>
@@ -81,7 +80,6 @@
                 <tr>
                   <td>{{$book->created_at}}</td>
                   <td>{{$book->tanggal_pinjam}}</td>
-                  <td>08.00 - 20.00</td>
                   <td>{{$book->nama_gedung}}</td>
                   <td>{{$book->nama_ruang}}</td>
                   <td>{{$book->nama_peminjam}}</td>
