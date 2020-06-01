@@ -10,7 +10,6 @@
   <section class="content-header">
     <h1>
       Booking Ruangan
-      <small>it all starts here</small>
     </h1>
   </section>
   <!-- Main content -->
