@@ -26,7 +26,7 @@
     		<div class="login-logo">
       			<a href="/index2.html"><b>Peminjaman Ruangan/Tempat</b></a>
     		</div>
-    		<p class="login-box-msg">Login untuk booking ruangan</p>
+    		<p class="login-box-msg">Website Peminjaman Ruangan di Unpad</p>
 
 			<form method="post" class="form" action="{{ route('login') }}">
 			@csrf
