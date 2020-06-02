@@ -4,7 +4,7 @@ namespace App\Http\Controllers\PJ;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Gedung;
+use App\gedung;
 use App\Ruangan;
 
 class PJDashboardController extends Controller
