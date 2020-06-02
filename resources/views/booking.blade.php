@@ -39,7 +39,7 @@
                 <div class="form-group">
                   <label for="nama_ruang">Ruangan</label>
                   <select class="form-control" id="nama_ruang" name="nama_ruang" required>
-                    @foreach (App\ruangan::all() as $r)
+                    @foreach (App\Ruangan::all() as $r)
                       <option value="{{$r->nama_ruangan}}">{{$r->nama_ruangan}}</option>
                     @endforeach
                   </select>
