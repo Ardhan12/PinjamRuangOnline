@@ -1,0 +1,159 @@
+[33mcommit f55e2f562057e8d2e5d79414054c90ede17c4023[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Tue Jun 2 07:02:28 2020 +0700
+
+    cobagitu
+
+[33mcommit 7e6bfc895d855bf080245fd43281f14f3dc481c4[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Tue Jun 2 06:07:09 2020 +0700
+
+    update db
+
+[33mcommit c1fbbb458940e51b741a76a0b998e9203632af9d[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Mon Jun 1 21:53:12 2020 +0700
+
+    update json
+
+[33mcommit 8d10637056a38f79051c9aecfc63d2d6ac3fdffd[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Mon Jun 1 20:40:05 2020 +0700
+
+    lagi2
+
+[33mcommit 4998e4335396a59029172869a029c71073107e3c[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Mon Jun 1 19:26:15 2020 +0700
+
+    edit json
+
+[33mcommit e59bd8a87985c4b4d220385e2af995daf48b49d8[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Mon Jun 1 19:08:14 2020 +0700
+
+    commit first
+
+[33mcommit 54a4a571aa0ce221049fc32fc60083204c7b4d83[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Mon Jun 1 15:17:45 2020 +0700
+
+    deleting un-use
+
+[33mcommit 7b4886d2ae30d18b03c892b1164149041e411b96[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Mon Jun 1 15:14:34 2020 +0700
+
+    delete dikit
+
+[33mcommit ffd6d07b0f675d1d26bc5253308f284c9935447e[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Mon Jun 1 15:12:32 2020 +0700
+
+    rapihin prosedur
+
+[33mcommit 4157c8b201b0b87324956c29fc391c665dbf2f6c[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Mon Jun 1 14:52:43 2020 +0700
+
+    perubahan nama sedikit
+
+[33mcommit 33202482a46fc7ba7755965fcb042a07c1dd11cc[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Mon Jun 1 14:31:37 2020 +0700
+
+    delete un-use file
+
+[33mcommit 27630d71e62478076b3442fcbd8e7b68be37e03f[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Sun May 31 14:34:25 2020 +0700
+
+    showing data
+
+[33mcommit cb4d4810d61befa4e06ff1854ff7da98bff58159[m
+Author: Azka Kasyfi Z <azka.kasyfi@gmail.com>
+Date:   Sun May 31 01:59:17 2020 +0700
+
+    frontend terbaru
+
+[33mcommit 8c02fe5cfe979843b2b797fd2bb19cc4d25aa1f5[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Sun May 31 00:39:41 2020 +0700
+
+    berhasil input booking
+
+[33mcommit 13067d45907322be34e65b0b0b6cfd0f6905eb97[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Thu May 21 01:58:20 2020 +0700
+
+    benerin halaman booking
+
+[33mcommit 8e22d6a681f3f9732064bcb2762e2dfd81b9dbdd[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Thu May 21 00:55:19 2020 +0700
+
+    nambahin booking controller
+    
+    tinggal kodingan buat output di halaman booking belum bener
+
+[33mcommit 9329a11a816481f73d51d44fac6646ceb4dcfd53[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Wed May 20 23:49:26 2020 +0700
+
+    berhasil input dan show data bagian pj
+    
+    benerin folder public
+
+[33mcommit 42ceec742b32467080b0a76d3e030e6ea11ee5c0[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Wed May 20 00:04:59 2020 +0700
+
+    berhasil input
+
+[33mcommit a99b2534113d8a28248c04407a35fd64d53d13b5[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Fri May 15 20:49:56 2020 +0700
+
+    barulagi
+
+[33mcommit 4368e3649d7a61f863ff33470656eef17de27fb7[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Fri May 1 17:28:07 2020 +0700
+
+    readme
+
+[33mcommit 8838d4b481647e51dc0968443a1c603196540d8c[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Fri May 1 17:26:24 2020 +0700
+
+    readme
+
+[33mcommit c60061ec20ff5cc282077a180a5a134eac1d94f6[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Sun Apr 26 22:02:37 2020 +0700
+
+    bisa book dikit
+
+[33mcommit 53673f074d245023cbb4f7e9a57d4886993713ea[m
+Author: sarah <sarahhasnaz@gmail.com>
+Date:   Sun Apr 19 18:20:06 2020 +0700
+
+    home jadi login
+
+[33mcommit 27cf108e1cf900f04658f781567134cc7c20a45a[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Sun Apr 19 18:00:07 2020 +0700
+
+    bisa login
+
+[33mcommit e0b918fc604ce65a4a65926a317741b18eba5570[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Wed Apr 15 15:08:52 2020 +0700
+
+    menambahkan baru
+
+[33mcommit b789ebabc019dcea19fd3d7e0017cbc80819f7ef[m
+Author: Ardhan12 <arief.ramadhan43@gmail.com>
+Date:   Tue Mar 31 15:46:48 2020 +0700
+
+    first

@@ -13,7 +13,7 @@ class Bookingruangan extends Migration
      */
     public function up()
     {
-        Schema::create('bookingruangan', function (Blueprint $table) {
+        Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->string('name_organisasi');
             $table->string('nama_gedung');

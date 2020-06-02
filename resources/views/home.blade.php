@@ -29,7 +29,7 @@
               <div class="form-group">
                 <label>Ruangan</label>
                 <select class="form-control select2" style="width: 100%;">
-                  @foreach (App\ruangan::all() as $r)
+                  @foreach (App\Ruangan::all() as $r)
                    <option value="{{$r->ruang_id}}" id="r{{$r->ruang_id}}">{{$r->nama_ruangan}}</option>
                   @endforeach
                 </select>
