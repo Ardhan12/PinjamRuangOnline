@@ -26,7 +26,7 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="name_organisasi">Nama Organisasi</label>
-                  <p class="mt-2">{{ Auth::user()->name_organisasi }}</p>
+                  <p class="mt-2">{{ Auth::User()->name_organisasi }}</p>
                 </div>
                 <div class="form-group">
                   <label for="namagedung">Gedung</label>
